@@ -13,10 +13,13 @@ public class DialogueUI : MonoBehaviour {
     public float speed = 10f;
     bool open = false;
 
-    void Awake() {
-        background = transform.GetChild(0).GetComponent<Image>();
+    void Awake() 
+    {
+        background = transform.GetChild(0).GetComponent<Image>(); 
         nameText   = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
         talkText   = transform.GetChild(2).GetComponent<TextMeshProUGUI>();
+
+
     }
 
     void Start() {
